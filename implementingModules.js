@@ -29,6 +29,7 @@ var controller = (function(budgetCtrl, UICtrl){
     }
 
 })(budgetController,UIController);
+
 /*
 In controller, we can not have budgetCtrl , we can directly use budgetController but why we change the name:
 because in future if we change the name of budget Controller to somethng else, we dont have to change it eveywhere in controller ocde. Inside the scope of controller, it is known as budgetCtrl and thus we only will have to change the name inside last () if ever name changes.

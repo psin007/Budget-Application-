@@ -7,16 +7,16 @@ var budgetController = (function(){
 
 //UI CONTROLLER
 var UIController = (function(){
-
+    
     //if in future, CSS class names are changed, we will only have to change it here and not all over the code
     var DOMstrings = {
         inputType:'.add__type',
         inputDescription:'.add__description',
         inputValue: '.add__value',
         inputButton: '.add__btn'
-
+        
     };
-
+    
     return{
         getinput: function(){
             return{
@@ -30,13 +30,13 @@ var UIController = (function(){
             return DOMstrings;
         }
     }
-
+    
 })();
 
 
 //GLOBAL APP CONTROLLER
 var controller = (function(budgetCtrl, UICtrl){
-
+    
     var DOM = UICtrl.getDOMStrings();
 
     var ctrlAddItem = function(){
