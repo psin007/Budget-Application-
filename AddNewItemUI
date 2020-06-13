@@ -93,23 +93,23 @@ var UIController = (function(){
                 //to return 3 variables, better have an object which has all these three attributes
             }
         },
-
+        
         addListItems: function(obj,type){
             var html , newHtml,element;
             //create HTML strings with placeholder text
-
+            
             if(type === 'inc'){
                 element = DOMstrings.incomeContainer;
                 html = '<div class="item clearfix" id="%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div> <div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button> </div></div></div>'
-
+                
             } else if(type === 'exp'){
-
+               
                 element = DOMstrings.expenseContainer;
                 html = '<div class="item clearfix" id="%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
-
+                
             }
             //placeholders are especially designed to be between %% so that we dont mix up
-
+            
             // Replace the placeholder text with some actual data
             newHtml = html.replace('%id%',obj.id); //html is a string here and replace is a method of string
             newHtml = newHtml.replace('%description%',obj.description);
@@ -117,7 +117,7 @@ var UIController = (function(){
             // Insert the HTML into the DOM
             document.querySelector(element).insertAdjacentHTML('beforeend',newHtml); // before end so that the new expense or income is at last or after previous expenses or incomes
         },
-
+        
         getDOMStrings: function(){
             return DOMstrings;
         }
