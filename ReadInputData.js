@@ -26,7 +26,7 @@ var UIController = (function(){
                 //to return 3 variables, better have an object which has all these three attributes
             }
         },
-        getDOMStrings: function(){
+        getDOMStrings: function(){ // to expose inputButton to be used in Controller
             return DOMstrings;
         }
     }

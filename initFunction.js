@@ -54,7 +54,6 @@ var controller = (function(budgetCtrl, UICtrl){
 
             // 1. Get the field input data
             var input = UICtrl.getinput();
-            console.log(input);
 
             // 2. Add the item to budget Controller
 
@@ -75,4 +74,4 @@ var controller = (function(budgetCtrl, UICtrl){
 
 })(budgetController,UIController);
 
-controller.init();
+controller.init(); //only line of code that is outside
