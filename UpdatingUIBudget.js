@@ -254,6 +254,7 @@ var controller = (function(budgetCtrl, UICtrl){
                 totalInc : 0,
                 totalExp: 0,
                 percentage : -1
+
             });
             setupEventListeners();
         }
