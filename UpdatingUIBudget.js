@@ -249,6 +249,7 @@ var controller = (function(budgetCtrl, UICtrl){
     return{
         init: function(){ // to call eventListeners function
             console.log('Application has started.');
+
             UICtrl.displayBudget({
 
                 budget: 0,
