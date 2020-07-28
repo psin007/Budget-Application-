@@ -328,6 +328,12 @@ var UIController = (function(){
 
         },
 
+        changedType: function(){
+
+
+
+        },
+
         getDOMStrings: function(){
             return DOMstrings;
         }
@@ -352,6 +358,9 @@ var controller = (function(budgetCtrl, UICtrl){
 
         document.querySelector(DOM.container).addEventListener('click',ctrlDeleteItem);
         //event listener on container because of event delegation
+
+        document.querySelector(DOM.inputType).addEventListener('change', UICtrl.changedType);
+
     };
 
     var updateBudget = function(){
